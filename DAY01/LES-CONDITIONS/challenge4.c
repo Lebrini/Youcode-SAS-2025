@@ -30,6 +30,7 @@ int main() {
            printf("le nombres des secondes dans annees : %d", 525600*60);
            break;
         default :
+        
            printf("aucun autre choix exist\n");
     }
     return 0;
