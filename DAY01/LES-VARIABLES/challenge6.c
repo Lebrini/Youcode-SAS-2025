@@ -13,5 +13,6 @@ int main() {
     printf("la soustraction entre a et b : %d\n", a - b);
     printf("le produit de a et b : %d\n", a * b);
     printf("la division de a et b : %d\n", a / b);
+    
     return 0;
 }
