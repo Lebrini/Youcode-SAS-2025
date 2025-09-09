@@ -207,7 +207,11 @@ int main()
             case 6:
                 printf("Exit.....\n");
                 break;
+            default:
+                printf("Choix Invalid\n");
+                break;
         }
     }while(choix != 6);
+
 
 }
