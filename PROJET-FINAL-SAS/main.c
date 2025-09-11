@@ -56,7 +56,7 @@ void ajouter_joueur() {
             scanf("%d", &joueurs[nombre_joueur].age);
             printf("NOMBRE DE BUTS : ");
             scanf("%d", &joueurs[nombre_joueur].buts);
-            printf("STATUT (TITULAIRE / REMPLACANT): ");
+            printf("STATUT (titulaire / remplacant): ");
             scanf("%s", joueurs[nombre_joueur].statut);
             nombre_joueur++;
             printf("------------------------------------------------------------\n");
@@ -92,7 +92,7 @@ void ajouter_joueur() {
                 scanf("%d", &joueurs[nombre_joueur].age);
                 printf("NOMBRE DE BUTS : ");
                 scanf("%d", &joueurs[nombre_joueur].buts);
-                printf("STATUT (TITULAIRE / REMPLACANT): ");
+                printf("STATUT (titulaire / remplacant): ");
                 scanf("%s", joueurs[nombre_joueur].statut);
                 nombre_joueur++;
                 printf(">>> Joueur %d ajoute avec succes !\n", i + 1);
@@ -262,7 +262,7 @@ void supprimer_joueur() {
             nombre_joueur--;
             found = 1;
             printf("------------------------------------------------------------\n");
-            printf(">>> Joueur avec ID %d supprimé avec succès !\n", id);
+            printf(">>> Joueur avec ID %d supprime avec succes !\n", id);
             printf("------------------------------------------------------------\n");
             break;
         }
@@ -339,7 +339,7 @@ void statistiques()
         int moyen_age;
         int n_but = 0;
         int found = 0;
-        case 1:  
+        case 1:
           printf("Entrer le X buts : ");
           scanf("%d",&n_but);
           for(int i = 0; i < nombre_joueur; i++)
@@ -472,13 +472,13 @@ for(int i = 0; i < 10; i++)
         printf("7- Exit\n");
         printf("Votre choix : ");
         scanf("%d", &choix);
-
+        while(getchar() != '\n');
         switch (choix) {
-            case 1: 
-               ajouter_joueur(); 
+            case 1:
+               ajouter_joueur();
                break;
-            case 2: 
-               afficher_joueur(); 
+            case 2:
+               afficher_joueur();
                break;
             case 3:
                mod_joueurs();
@@ -493,7 +493,7 @@ for(int i = 0; i < 10; i++)
                statistiques();
                break;
             case 7:
-               printf("Exit...\n"); 
+               printf("Exit...\n");
                break;
             default: printf("Choix invalide !\n");
         }
