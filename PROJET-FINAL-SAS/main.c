@@ -31,7 +31,7 @@ void ajouter_joueur() {
         printf("2- Ajouter plusieurs joueurs\n");
         printf("3- Exit\n");
         printf("------------------------------------------------------------\n");
-        printf("Votre choix : ");
+        printf("Votre choix (sous forme d'un entier): ");
         scanf("%d", &choix);
 
         if (choix == 1) {
@@ -112,7 +112,7 @@ void afficher_joueur() {
         printf("2- Afficher les joueurs par POSTE\n");
         printf("3- Afficher les joueurs par AGE\n");
         printf("4- Exit\n");
-        printf("Votre choix : ");
+        printf("Votre choix (sous forme d'un entier): ");
         scanf("%d", &choix);
 
         if (choix == 1) {
@@ -202,7 +202,7 @@ void mod_joueurs()
                 printf("2- Modifier L'age du Joueur : \n");
                 printf("3- Modifier Le Nombre de Buts du Joueur : \n");
                 printf("4- Exit\n\n");
-                printf("Votre choix : ");
+                printf("Votre choix (sous forme d'un entier): ");
                 scanf("%d", &choix);
 
                 if(choix == 1)
@@ -281,7 +281,7 @@ void rechercher_joueur()
     printf("------------------------------------------------------------\n");
     printf("1- Rechercher par ID\n");
     printf("2- Rechercher par NOM\n");
-    printf("Votre choix : ");
+    printf("Votre choix (sous forme d'un entier): ");
     scanf("%d",&choix);
     if(choix == 1)
     {
@@ -329,7 +329,7 @@ void statistiques()
     printf("6- Age moyen des joueurs\n");
     printf("7- Exit\n");
 
-    printf("Votre choix : ");
+    printf("Votre choix (sous forme d'un entier): ");
     scanf("%d",&choix);
     switch(choix)
     {
@@ -470,9 +470,8 @@ for(int i = 0; i < 10; i++)
         printf("5- Rechercher sur un joueur\n");
         printf("6- Statistiques\n");
         printf("7- Exit\n");
-        printf("Votre choix : ");
+        printf("Votre choix (sous forme d'un entier): ");
         scanf("%d", &choix);
-        while(getchar() != '\n');
         switch (choix) {
             case 1:
                ajouter_joueur();
